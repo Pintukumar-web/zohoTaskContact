@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  width:90%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.linkWrapper{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.mainHeader{
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.mainHeader::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 5px auto;
+  background-color: rgb(86, 5, 139);
+}
+
+nav{
+  background-color: rgb(199, 199, 199);
+  padding: 10px;
+  
+}
+
+.option{
+  color: rgb(0, 0, 0);
+}
+button.option{
+  cursor: pointer;
+  padding: 3px 14px;
+  font-size: 0.8rem;
+  border: 1px solid rgb(235, 235, 235);
+  background-color:rgb(202, 49, 11);
+  border-radius: 15px;
+  color: rgb(233, 233, 233);
+}
+
+nav a.active{
+  color: blueviolet;
+}
+
+.signInCard{
+  padding: 40px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 18px rgba(24, 24, 24, 0.201);
+  margin:20px auto;
+  border-radius: 5px;
+ width:fit-content;
+ position: relative;
+}
+
+.signInCard h2{
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form input{
+ padding: 5px 10px;
+}
+
+form button{
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid  rgb(48, 15, 196);
+  color: rgb(48, 15, 196);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+
+form button:hover{
+background-color:  rgb(48, 15, 196);
+color: white;
+}
+
+.error,.success{
+  font-size: 0.6rem;
+}
+
+.error{
+  color: red;
+}
+.success{
+  color: green;
+}
+
+button.disabled{
+  opacity: 0.6;
+  cursor:not-allowed
+}
+
+.create{
+  font-size: 0.7rem;
+  margin-top: 20px;
+}
+
+.create a{
+  color: blue;
+}
+
+.googleAuth{
+  box-shadow: 0px 4px 20px rgba(24, 24, 24, 0.201);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+ 
+  padding: 10px 10px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.googleAuth p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.googleAuth p:hover{
+  color: blue;
+}
+
+.googleAuth img{
+  width: 16px;
+  height: 16px;
+ 
+}
+
+.home h2{
+  text-align: center;
+  font-weight: 300;
+  margin: 10px auto;
+}
+.home input{
+  width: 100%;
+}
+
+.home form{
+  width: 30%;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.home button{
+  width: fit-content;
+ margin-right: auto;
+}
+
+.home hr{
+  margin: 20px auto 0;
+}
+
+.noContact{
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+}
+table,td,tr,th{
+  border: 1px solid black;
+  font-size: 0.8rem;
+  
+}
+td,th{
+  padding:10px 20px;
+  text-align: center;
+}
+th{
+  background-color: grey;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+
+.home{
+  padding-bottom: 50px;
+}
+
+tr:hover{
+  background-color: rgb(247, 225, 225);
+  cursor: pointer;
+}
+
