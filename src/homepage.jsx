@@ -6,7 +6,7 @@ import useAuthListener from "./utils/useAuth"
 
 const HomePage=()=>{
  const {user}=useAuthListener()
- const uid=user.uid
+ const uid=user?.uid
 const {db,FieldValue}=useContext(FirebaseContext)
 console.log(FieldValue);
   const [contactData,setContactData]=useState({

@@ -16,9 +16,10 @@ const Signin=()=>{
     const {firebaseApp,provider} =useContext(FirebaseContext)
 
     const handleSubmit=(e)=>{
+    setError('')
     setLoading(true)
     e.preventDefault()
-    if(password.length>0 && email.lenght>0){
+    if(password.length>0 && email.length>0){
         firebaseApp.auth().signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             setLoading(false)
