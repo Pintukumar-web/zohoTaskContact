@@ -84,6 +84,9 @@ db.collection('contacts').doc(uid).get().then(data=>{
          <>
          <hr />
          <h2>My Contacts</h2>
+         <div className="horizontalScroll">
+
+         
    <table>
       <thead>
      <tr>
@@ -103,6 +106,7 @@ db.collection('contacts').doc(uid).get().then(data=>{
 }
 </tbody>
     </table>
+    </div>
     </>
       ) }
    </div>

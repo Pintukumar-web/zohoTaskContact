@@ -1,43 +1,44 @@
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(238, 231, 248);
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.wrapper{
-  width:90%;
+.wrapper {
+  width: 90%;
   max-width: 2000px;
   margin: 0 auto;
 }
 
-.linkWrapper{
+.linkWrapper {
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: center;
 }
 
-.mainHeader{
+.mainHeader {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
 
-.mainHeader::after{
-  content: '';
+.mainHeader::after {
+  content: "";
   display: block;
   width: 100px;
   height: 1px;
@@ -45,47 +46,47 @@ a{
   background-color: rgb(86, 5, 139);
 }
 
-nav{
+nav {
   background-color: rgb(199, 199, 199);
   padding: 10px;
-  
 }
 
-.option{
+.option {
   color: rgb(0, 0, 0);
 }
-button.option{
+button.option {
   cursor: pointer;
   padding: 3px 14px;
   font-size: 0.8rem;
   border: 1px solid rgb(235, 235, 235);
-  background-color:rgb(202, 49, 11);
+  background-color: rgb(202, 49, 11);
   border-radius: 15px;
   color: rgb(233, 233, 233);
 }
 
-nav a.active{
+nav a.active {
   color: blueviolet;
 }
 
-.signInCard{
+.signInCard {
   padding: 40px 30px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 2px 18px rgba(24, 24, 24, 0.201);
-  margin:20px auto;
+  box-shadow: 2px 2px 20px -4px rgba(43, 43, 43, 0.201);
+  margin: 50px auto 20px;
   border-radius: 5px;
- width:fit-content;
- position: relative;
+  width: fit-content;
+  position: relative;
+  background-color: white;
 }
 
-.signInCard h2{
+.signInCard h2 {
   font-weight: 300;
   margin-bottom: 10px;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,15 +94,15 @@ form{
   gap: 10px;
 }
 
-form input{
- padding: 5px 10px;
+form input {
+  padding: 5px 10px;
 }
 
-form button{
+form button {
   display: block;
   width: 100%;
   padding: 5px 10px;
-  border: 1px solid  rgb(48, 15, 196);
+  border: 1px solid rgb(48, 15, 196);
   color: rgb(48, 15, 196);
   background-color: white;
   cursor: pointer;
@@ -109,90 +110,90 @@ form button{
   transition: all 0.3s ease-in;
 }
 
-form button:hover{
-background-color:  rgb(48, 15, 196);
-color: white;
+form button:hover {
+  background-color: rgb(48, 15, 196);
+  color: white;
 }
 
-.error,.success{
+.error,
+.success {
   font-size: 0.6rem;
 }
 
-.error{
+.error {
   color: red;
 }
-.success{
+.success {
   color: green;
 }
 
-button.disabled{
+button.disabled {
   opacity: 0.6;
-  cursor:not-allowed
+  cursor: not-allowed;
 }
 
-.create{
+.create {
   font-size: 0.7rem;
   margin-top: 20px;
 }
 
-.create a{
+.create a {
   color: blue;
 }
 
-.googleAuth{
-  box-shadow: 0px 4px 20px rgba(24, 24, 24, 0.201);
+.googleAuth {
+  box-shadow: 0px 4px 20px -4px rgba(24, 24, 24, 0.201);
   position: absolute;
   left: 0;
   right: 0;
   bottom: -60px;
- 
+  background-color: white;
   padding: 10px 10px;
   font-size: 0.7rem;
   cursor: pointer;
 }
 
-.googleAuth p{
+.googleAuth p {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
 
-.googleAuth p:hover{
+.googleAuth p:hover {
   color: blue;
 }
 
-.googleAuth img{
+.googleAuth img {
   width: 16px;
   height: 16px;
- 
 }
 
-.home h2{
+.home h2 {
   text-align: center;
   font-weight: 300;
   margin: 10px auto;
 }
-.home input{
+.home input {
   width: 100%;
 }
 
-.home form{
+.home form {
   width: 30%;
   min-width: 200px;
   margin: 0 auto;
 }
 
-.home button{
+.home button {
   width: fit-content;
- margin-right: auto;
+  margin-right: auto;
 }
 
-.home hr{
+.home hr {
   margin: 20px auto 0;
 }
 
-.noContact{
+.noContact {
   text-align: center;
   opacity: 0.5;
   margin-top: 20px;
@@ -200,32 +201,120 @@ button.disabled{
   font-size: 0.8rem;
 }
 
-table{
+table {
   border-collapse: collapse;
   width: 100%;
   margin: 20px auto;
 }
-table,td,tr,th{
+table,
+td,
+tr,
+th {
   border: 1px solid black;
   font-size: 0.8rem;
-  
 }
-td,th{
-  padding:10px 20px;
+td,
+th {
+  padding: 10px 20px;
   text-align: center;
 }
-th{
+th {
   background-color: grey;
   color: rgb(255, 255, 255);
   font-size: 0.9rem;
 }
 
-.home{
+.home {
   padding-bottom: 50px;
 }
 
-tr:hover{
+tr:hover {
   background-color: rgb(247, 225, 225);
   cursor: pointer;
 }
 
+input::placeholder {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 650px) {
+  .horizontalScroll {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .mainHeader {
+    font-size: 2.1rem;
+  }
+  a.option {
+    font-size: 1.4rem;
+    margin-top: 7px;
+  }
+  nav {
+    padding-bottom: 20px;
+  }
+  form {
+    display: block;
+  }
+
+  form input {
+    margin: 10px 0;
+    padding: 13px 10px;
+    width: 100%;
+  }
+
+  form button {
+    font-size: 1.4rem;
+    padding: 9px;
+  }
+  .create {
+    font-size: 1.1rem;
+  }
+
+  .signInCard h2 {
+    font-size: 2rem;
+  }
+
+  form input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .signInCard {
+    width: 92%;
+    margin-top: 70px;
+  }
+
+  .googleAuth p {
+    font-size: 1.2rem;
+  }
+
+  .googleAuth {
+    padding: 14px 0;
+    bottom: -70px;
+  }
+  .home h2 {
+    margin: 16px auto 10px;
+  }
+
+  .home form {
+    width: 85%;
+  }
+  .home input::placeholder {
+    font-size: 1.1rem;
+  }
+
+  .home button {
+    font-size: 1.2rem;
+  }
+
+  button.option {
+    font-size: 1.1rem;
+    padding: 5px 14px;
+    margin-top: 7px;
+  }
+}
